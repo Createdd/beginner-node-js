@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Site</title>
+    <style>
+      body{background: silver; color:red; text-align:center;}
+    </style>
+  </head>
+
+  <body>
+    <% include partials/nav.ejs %>
+    <h1>WContact</h1>
+    <p>Lorem ipsum dolor sit amet, officia deserunt mollit anim id est laborum.</p>
+    <p>
+      <%= qs.person %>
+    </p>
+
+    <form id="contact-form" method="POST" action="/contact">
+        <input type="text" name="name" id="name" placeholder="Name" value="<%= qs.person%>"/>
+        <input type="email" name="email" id="email" placeholder="Email" value="<%= qs.dept%>"/>
+        <textarea name="msg" id="msg" placeholder="Message"></textarea>
+        <input type="submit" name="submit" id="submit" value="Send message"/>
+    </form>
+
+
+  </body>
+</html>
