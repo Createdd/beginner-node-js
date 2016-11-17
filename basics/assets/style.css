@@ -1,0 +1,13 @@
+body {
+  font-family: Coda, arial black;
+  color:red;
+  font-size: 2em;
+  letter-spacing: -1px;
+  height:100vh;
+  background: url("https://images7.alphacoders.com/413/413229.jpg"), black;
+  background-size: cover;
+  background-position: 80%;
+  background-repeat: no-repeat;
+  background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(0,0,0,1) 100%);
+  overflow:hidden;
+}

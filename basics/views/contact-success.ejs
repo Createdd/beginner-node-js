@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Site</title>
+    <style>
+      body{background: silver; color:red; text-align:center;}
+    </style>
+  </head>
+
+  <body>
+    <% include partials/nav.ejs %>
+    <h1>Thanks for getting in touch</h1>
+        <p>
+      you conntacted <%= data.name%> and wrote:" <%= data.msg%>"
+    </p>
+    <p>
+      we will reply to you <%=data.email%>
+    </p>
+
+</html>

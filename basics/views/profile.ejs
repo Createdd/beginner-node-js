@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Site</title>
+    <style>
+      body{background:lightgreen; color:red; text-align:center;}
+      h1, h2 {color:green;}
+    </style>
+  </head>
+
+  <body>
+    <% include partials/nav.ejs %>
+    <h1>Profile of <%=person %></h1>
+    <p><strong>Age: <%=data.age %></strong></p>
+    <p><strong>Job: <%=data.job %></strong></p>
+    <h2>Hobbies</h2>
+    <ul>
+      <% data.hobbies.forEach(function(item){%>
+        <li><%= item %></li>
+      <%}); %>
+    </ul>
+  </body>
+</html>
